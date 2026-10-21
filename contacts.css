@@ -1,0 +1,57 @@
+body.contacts-page,
+.contacts-page html {
+  background: #000;
+  color: #fff;
+}
+html:has(.contacts-page) { background: #000; }
+
+.contacts-page .screen {
+  background: #000;
+  color: #fff;
+  padding-top: calc(var(--safe-top) + 48 * var(--u));
+}
+
+/* Texture is dark-on-white, so invert it for the black page */
+.contacts-page .screen::before,
+.contacts-page .screen::after {
+  filter: invert(1) brightness(9) url(#tex-boost);
+  opacity: 1;
+}
+
+.contacts-page .title { color: #fff; }
+.contacts-heading { margin-top: calc(32 * var(--u)); color: #fff; }
+
+.person {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contacts-heading + .person { margin-top: calc(74 * var(--u)); }
+.person + .person { margin-top: calc(42 * var(--u)); }
+
+.avatar {
+  display: block;
+  width: calc(130 * var(--u));
+  height: calc(130 * var(--u));
+  border-radius: 50%;
+  object-fit: cover;
+}
+.avatar--placeholder { background: #ff0a78; }
+
+.name {
+  margin-top: calc(22 * var(--u));
+  font-size: calc(12 * var(--u));
+  letter-spacing: 0.04em;
+}
+
+.social {
+  display: flex;
+  gap: calc(6 * var(--u));
+  margin-top: calc(6 * var(--u));
+}
+.social a { display: block; line-height: 0; }
+.social img { width: calc(15 * var(--u)); height: calc(15 * var(--u)); }
+
+.contacts-page .contacts {
+  background: rgba(60, 60, 60, 0.7);
+}
