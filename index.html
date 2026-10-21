@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A Journey to Awareness</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=10">
+</head>
+<body>
+  <div class="phone">
+  <main class="screen">
+    <h1 class="title">A Journey<br>to Awareness</h1>
+
+    <h2 class="heading about-heading">About</h2>
+
+    <section class="card about">
+      <button type="button" class="speaker-btn" id="speaker-btn" aria-label="Play meditation audio" aria-pressed="false"><img class="speaker" src="../assets/Speaker.svg" alt=""></button>
+      <audio id="meditation-audio" src="../assets/voice-meditative-3.mp3" preload="none"></audio>
+      <p><em><strong>A Journey to Awareness</strong></em> is a three-screen immersive installation that visualizes a Buddhist meditation journey through abstract digital visuals and a carefully composed multisensory environment. Combining digital media techniques with physical elements such as lighting, scent, and spatial arrangements, the installation engages the visual, auditory, olfactory, and tactile senses to create an immersive meditative experience.</p>
+      <p>The installation offers audiences a glimpse into the stages and experiences of meditation, from sensory overload to awareness, while exploring meditation as a potential method for self-reflection and easing internal struggles. Through the interplay of audiovisual elements and sensory stimuli, the experience invites audiences to turn their attention inward and reflect on their inner experiences.</p>
+      <p>This project was created by Do Hoang Lam Nguyen and Truong Thuy Mai Hong as part of the Heightened Multisensory Experiences course of the School of Design, RMIT University, Melbourne, under the mentorship of Dr. Darrin Verhagen and Dr. Niklas Pajanti.</p>
+    </section>
+
+    <h2 class="heading senses-heading">Included Senses</h2>
+
+    <section class="card senses">
+      <p class="hint"><img src="../assets/warning.svg" alt=""><em><strong>Tap each icon for details &amp; safety info.</strong></em></p>
+      <ul class="icons">
+        <li><button type="button" data-modal="modal-smell" aria-haspopup="dialog"><img class="i-smell" src="../assets/nose.svg" alt=""><span>Smell</span></button></li>
+        <li><button type="button" data-modal="modal-sight" aria-haspopup="dialog"><img class="i-sight" src="../assets/sight.svg" alt=""><span>Sight</span></button></li>
+        <li><button type="button" data-modal="modal-hear" aria-haspopup="dialog"><img class="i-hear" src="../assets/ear.svg" alt=""><span>Hear</span></button></li>
+        <li><button type="button" data-modal="modal-touch" aria-haspopup="dialog"><img class="i-touch" src="../assets/meditator.svg" alt=""><span>Touch</span></button></li>
+      </ul>
+    </section>
+
+    <footer class="contacts"><a href="contacts.html">Contacts</a></footer>
+  </main>
+  </div>
+
+  <div class="overlay" id="modal-smell" role="dialog" aria-modal="true" aria-labelledby="smell-title" aria-hidden="true">
+    <div class="modal">
+      <div class="modal-text">
+        <h3 id="smell-title">Smell - Diffusor Scent</h3>
+        <p class="product"><em><strong>Béatrice Oil<br>Burner Blend</strong></em></p>
+        <p>A warm, enlivening blend of earthy and citrus notes to ground spirits and stimulate the senses.<br>Aroma: Woody, citrus, smoky<br><strong>Key ingredients:</strong> Patchouli, Cedar Atlas, Lemongrass</p>
+      </div>
+      <img class="modal-img" src="../assets/scent.svg" alt="Aesop Beatrice oil burner blend bottle">
+      <div class="warning">
+        <h4><img src="../assets/warning.svg" alt="">Warning</h4>
+        <p>The product might not be suitable for people with <strong>asthma, fragrance sensitivity,</strong> or <strong>migraines.</strong></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="overlay" id="modal-sight" role="dialog" aria-modal="true" aria-labelledby="sight-title" aria-hidden="true">
+    <div class="modal">
+      <div class="modal-text">
+        <h3 id="sight-title">Sight - Screens</h3>
+        <p class="product"><em><strong>3 projected screens<br>&amp; Lights</strong></em></p>
+        <p>Three-screen projections and carefully designed lighting create an immersive visual journey.</p>
+      </div>
+      <img class="modal-img" src="../assets/screens-cut.png" alt="Projected screen visual">
+      <div class="warning">
+        <h4><img src="../assets/warning.svg" alt="">Warning</h4>
+        <p>Dynamic visual effects and changing light patterns may cause discomfort for people with <strong>light sensitivity</strong> or <strong>photosensitivity.</strong></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="overlay" id="modal-hear" role="dialog" aria-modal="true" aria-labelledby="hear-title" aria-hidden="true">
+    <div class="modal modal--wide">
+      <div class="modal-text">
+        <h3 id="hear-title">Hear - Spatial Audio System</h3>
+        <p class="product"><em><strong>Black Box Multichannel<br>Audio System</strong></em></p>
+        <p>The audio features varying volume levels and directional sound placement across the left and right channels.</p>
+      </div>
+      <img class="modal-img" src="../assets/spatial%20sound.svg" alt="Black box multichannel audio system">
+      <div class="warning">
+        <h4><img src="../assets/warning.svg" alt="">Warning</h4>
+        <p>Variations in volume and directional audio may cause discomfort for people with <strong>sound sensitivity</strong> or <strong>auditory sensitivities.</strong></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="overlay" id="modal-touch" role="dialog" aria-modal="true" aria-labelledby="touch-title" aria-hidden="true">
+    <div class="modal">
+      <div class="modal-text">
+        <h3 id="touch-title">Touch - Meditation Pose</h3>
+        <p class="product"><em><strong>Buddhist Meditation posture</strong></em></p>
+        <p>The installation encourages audiences to perform a Buddhist meditative posture to simulate meditation.</p>
+      </div>
+      <img class="modal-img modal-img--pose" src="../assets/meditator-cut.png" alt="Meditation pose">
+      <div class="warning">
+        <h4><img src="../assets/warning.svg" alt="">Warning</h4>
+        <p>Maintaining a meditative posture may cause <strong>physical discomfort.</strong><br>Please consider whether its <strong>religious</strong> themes align with your personal beliefs <strong>before participating.</strong><br>** A support chair is provided, and performing Buddhist meditation pose is <strong>not mandatory.</strong></p>
+      </div>
+    </div>
+  </div>
+
+  <script>    const overlays = document.querySelectorAll('.overlay');
+    const setOpen = (el, open) => {
+      el.classList.toggle('open', open);
+      el.setAttribute('aria-hidden', String(!open));
+      document.body.classList.toggle('modal-open', open);
+    };
+    document.querySelectorAll('[data-modal]').forEach(btn =>
+      btn.addEventListener('click', () => setOpen(document.getElementById(btn.dataset.modal), true)));
+    overlays.forEach(o => o.addEventListener('click', e => { if (e.target === o) setOpen(o, false); }));
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') overlays.forEach(o => setOpen(o, false));
+    });
+    const audio = document.getElementById('meditation-audio');
+    const speakerBtn = document.getElementById('speaker-btn');
+    const syncSpeaker = () => {
+      const playing = !audio.paused;
+      speakerBtn.classList.toggle('playing', playing);
+      speakerBtn.setAttribute('aria-pressed', String(playing));
+    };
+    speakerBtn.addEventListener('click', () => {
+      if (audio.paused) { audio.currentTime = 0; audio.play(); } else { audio.pause(); }
+    });
+    ['play', 'pause', 'ended'].forEach(ev => audio.addEventListener(ev, syncSpeaker));
+  </script>
+</body>
+</html>
